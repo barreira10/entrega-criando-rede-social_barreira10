@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Author" content="Paulo Barreira">
 
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+  <link rel="stylesheet" href="./src/styles/header.css" />
+  <link rel="stylesheet" href="./src/styles/main.css" />
+  <link rel="stylesheet" href="./src/styles/aside.css" />
+  <link rel="stylesheet" href="./src/styles/modal.css" />
+  <link rel="stylesheet" href="./src/styles/index.css" />
 
-    <title>Criando rede social</title>
-  </head>
-  <body></body>
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Tech Posters</title>
+</head>
+
+<body>
+  <header>
+    <section class="header__container">
+      <img src="./src/assets/img/logo.svg" alt="Logo do Site">
+      <button class="header__btn" type="button">Sair</button>
+    </section>
+  </header>
+  <main>
+    <dialog class="post__modal"></dialog>
+    <section class="container__primary">
+      <div class="container__img">
+        <form class="post__submit">
+          <div class="container__user">
+            <img src="./src/assets/img/user1.svg" alt="user" class="container__user--img">
+          </div>
+          <div class="container__title">
+            <p class="container__name">Samuel</p>
+            <p class="container__stack">Front end Engeneer</p>
+          </div>
+          <div class="container__input">
+            <input type="text" placeholder="Digitar titulo do post" id="title" class="container__input--title" required>
+            <textarea wrap="soft" cols="30" rows="5" placeholder="Digitar descrição do post"
+              class="container__input--description" required>
+          </textarea>
+            <button type="submit">Post</button>
+          </div>
+        </form>
+      </div>
+      <aside class="suggest">
+        <h2 class="suggest_title">Sugestões para voce seguir</h2>
+        <ul class="sugges__list">
+        </ul>
+      </aside>
+    </section>
+    <section class="container__secundary">
+      <h2>Posts Recentes</h2>
+      <ul class="post__list">
+      </ul>
+    </section>
+  </main>
+</body>
+<script type="module" src="./src/scripts/index.js"></script>
+
 </html>
