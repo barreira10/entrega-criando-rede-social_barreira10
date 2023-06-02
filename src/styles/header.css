@@ -1,0 +1,45 @@
+header {
+    background-color: var(--grey1);
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+}
+
+.header__container {
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__btn {
+    background-color: transparent;
+    color: var(--white);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    header {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .header__container {
+        max-width: 768px;
+
+    }
+}
+
+@media(min-width: 1200px) {
+    header {
+        padding: 2rem 3rem;
+    }
+
+    .header__container {
+        max-width: 1200px;
+
+    }
+}

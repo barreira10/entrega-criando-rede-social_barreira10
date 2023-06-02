@@ -1,0 +1,30 @@
+main {
+    padding-top: 5.25rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container__img {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media(min-width: 768px) {
+    .container__img {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .container__primary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media(min-width: 900px) {
+    .container__img {
+        gap: 6rem;
+    }
+}
