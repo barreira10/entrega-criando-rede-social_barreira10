@@ -9,8 +9,8 @@
 }
 
 .container__user--img {
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .container__title {
@@ -124,8 +124,6 @@
     }
 }
 
-/* 23 */
-
 .container__secundary {
     padding-left: 2rem;
     padding-top: 2rem;
@@ -158,8 +156,8 @@
 }
 
 .user-img {
-    height: 3.25rem;
-    width: 3.25rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .user-name {
@@ -191,11 +189,13 @@
 .post-description {
     color: var(--grey2);
     font-size: 1rem;
+    
 }
 
 .post-button {
     display: flex;
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 .post-open {

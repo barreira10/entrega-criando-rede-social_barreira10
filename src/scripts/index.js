@@ -175,7 +175,7 @@ function addNewPost() {
         posts.unshift(newPost);
 
         titleInput.value = '';
-        descriptionInput.value = '';
+        descriptionInput.value = ''; 
 
         const postsList = document.querySelector('.post__list');
         postsList.innerHTML = '';
